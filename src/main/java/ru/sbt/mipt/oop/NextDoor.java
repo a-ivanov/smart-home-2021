@@ -1,11 +1,11 @@
 package ru.sbt.mipt.oop;
 
-public class Door {
+public class NextDoor {
     private final String id;
     private boolean isOpen;
     private int x = 1;
 
-    public Door(boolean isOpen, String id) {
+    public NextDoor(boolean isOpen, String id) {
         this.isOpen = isOpen;
         this.id = id;
     }

@@ -38,7 +38,7 @@ public class Application {
             if (event.getType() == DOOR_OPEN || event.getType() == DOOR_CLOSED) {
                 // событие от двери
                 for (Room room : smartHome.getRooms()) {
-                    for (Door door : room.getDoors()) {
+                    for (NextDoor door : room.getDoors()) {
                         if (door.getId().equals(event.getObjectId())) {
                             if (event.getType() == DOOR_OPEN) {
                                 door.setOpen(true);

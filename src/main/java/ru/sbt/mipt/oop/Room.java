@@ -4,10 +4,10 @@ import java.util.Collection;
 
 public class Room {
     private Collection<Light> lights;
-    private Collection<Door> doors;
+    private Collection<NextDoor> doors;
     private String name;
 
-    public Room(Collection<Light> lights, Collection<Door> doors, String name) {
+    public Room(Collection<Light> lights, Collection<NextDoor> doors, String name) {
         this.lights = lights;
         this.doors = doors;
         this.name = name;
@@ -17,7 +17,7 @@ public class Room {
         return lights;
     }
 
-    public Collection<Door> getDoors() {
+    public Collection<NextDoor> getDoors() {
         return doors;
     }
 
