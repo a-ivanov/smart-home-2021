@@ -9,7 +9,7 @@ public class Door {
         this.id = id;
     }
 
-    public String getId() {
+    public String getMyId() {
         return id;
     }
 
